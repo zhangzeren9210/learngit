@@ -6,6 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{jsx,js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhangzeren9210/learngit.git"
@@ -15,5 +30,12 @@
   "bugs": {
     "url": "https://github.com/zhangzeren9210/learngit/issues"
   },
-  "homepage": "https://github.com/zhangzeren9210/learngit#readme"
+  "homepage": "https://github.com/zhangzeren9210/learngit#readme",
+  "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  }
 }

@@ -1,0 +1,67 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "prettier", "prettier/react"],
+    "plugins": ["react", "jsx-a11y", "prettier"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "legacyDecotators": true,
+        "experimentalObjectRestSpread": true,
+        "jsx": true,
+        "arrowFunctions": true,
+        "classes": true,
+        "modules": true,
+        "defaultParams": true
+      }
+    },
+    "settings": {
+      "react": {
+        "createClass": "createReactClass",
+        "pragma": "React",
+        "version": "16.3.2"
+      },
+      "propWrapperFunctions": ["forbidExtraProps"]
+    },
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-unreachable": 0,
+      "no-console": 0,
+      "no-undef": 0,
+      "no-empty": 1,
+      "no-unused-vars": 0,
+      "strict": ["error", "global"],
+      "curly": "warn",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "no-useless-escape": "off",
+      "react/prop-types": "off",
+      "react/display-name": "off",
+      "react/no-deprecated": "off",
+      "react/no-string-refs": "off",
+      "react/no-children-prop": "off",
+      "react/jsx-no-target-blank": "off",
+      "react/no-direct-mutation-state": "off",
+      "no-case-declarations": "warn",
+      "prefer-spread": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-noninteractive-element-to-interactive-role": "off",
+      "jsx-a11y/alt-text": 1,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "jsx-a11y/mouse-events-have-key-events": 0,
+      "jsx-a11y/interactive-supports-focus": 0,
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/iframe-has-title": 0,
+      "jsx-a11y/no-noninteractive-element-interactions": 0,
+      "jsx-a11y/media-has-caption": 0,
+      "jsx-a11y/no-onchange":0,
+      "no-constant-condition": 0
+    }
+  }
+  

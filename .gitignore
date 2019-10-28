@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+*.log.*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# IDE/Editor data
+.idea
+.vscode
+
+# Mac System File
+*/.DS_Store
+*.swp
+.tern-project
+cscope.*
+
+# build output
+dist/
+cdn
+.next
+.ares
+outCDN
+
+# dependencies
+node_modules
+package-lock.json
+test/node_modules
+yarn.lock
+
+# logs
+*.log
+
+# test output
+coverage
+test/**/output
+.DS_Store
+
+# sw file
+./tools/swlist.json
+
+
